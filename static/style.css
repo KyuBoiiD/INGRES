@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    margin-top: 2.5vh;
+}
+
+header { text-align: center; margin-bottom: 20px; }
+header h1 { margin: 0; color: #4facfe; }
+
+.chat-box {
+    flex: 1;
+    background: #2d2d2d;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #444;
+}
+
+.message { padding: 10px 15px; border-radius: 8px; max-width: 80%; line-height: 1.5; }
+.user-msg { background: #4facfe; align-self: flex-end; color: white; }
+.bot-msg { background: #3d3d3d; align-self: flex-start; color: #ddd; }
+
+.input-area {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background: #333;
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px 30px;
+    background: #00f260;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #111;
+}
+
+/* Table Styling */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+.data-table th { background-color: #444; padding: 8px; text-align: left; }
+.data-table td { border-bottom: 1px solid #555; padding: 8px; }

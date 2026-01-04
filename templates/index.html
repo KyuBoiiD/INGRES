@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Language Database</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Data Explorer</h1>
+            <p>Talk to your Google Sheet in plain English</p>
+        </header>
+        
+        <div id="chat-box" class="chat-box">
+            <div class="message bot-msg">Hello! Ask me to show, add, update, or delete records.</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your request here..." autocomplete="off">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
